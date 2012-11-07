@@ -14,6 +14,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"MainStoryBoard" bundle:nil];
+//    UINavigationController * nc = (UINavigationController *)[storyboard instantiateInitialViewController];
+//    
+//    [nc setNavigationBarHidden:YES];
+    UIViewController * vc = [storyboard instantiateInitialViewController];
+    UINavigationController * nc = (UINavigationController *) vc;//.navigationController;
+    [nc setNavigationBarHidden:YES animated:YES];
     // Override point for customization after application launch.
     return YES;
 }
