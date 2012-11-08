@@ -7,10 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DisplayItem.h"
 
 @interface AITankInfo : NSObject{
-  NSString * name;  
+    NSString * _name;  
+    DisplayItem * _body;
+    DisplayItem * _cannon;
+    DisplayItem * _radar;
 }
 
+- (id) initWithName:(NSString*)theName;
 
 @end

@@ -174,6 +174,10 @@
 		967AE563162F601400D4A25C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967AE562162F601400D4A25C /* QuartzCore.framework */; };
 		967AE565162F601E00D4A25C /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967AE564162F601E00D4A25C /* OpenAL.framework */; };
 		967AE567162F602A00D4A25C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967AE566162F602A00D4A25C /* OpenGLES.framework */; };
+		967D632D164AE46A00BDBDDF /* Body.png in Resources */ = {isa = PBXBuildFile; fileRef = 967D632A164AE46A00BDBDDF /* Body.png */; };
+		967D632E164AE46A00BDBDDF /* cannon.gif in Resources */ = {isa = PBXBuildFile; fileRef = 967D632B164AE46A00BDBDDF /* cannon.gif */; };
+		967D632F164AE46A00BDBDDF /* radar.gif in Resources */ = {isa = PBXBuildFile; fileRef = 967D632C164AE46A00BDBDDF /* radar.gif */; };
+		967D6333164B2AE400BDBDDF /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 967D6332164B2AE400BDBDDF /* Constants.m */; };
 		9687A4E416370ACD0079CF94 /* MainLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9687A4E316370ACD0079CF94 /* MainLayer.mm */; };
 		968CDF011630C9A300B1F79B /* CCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968CDF001630C9A300B1F79B /* CCViewController.m */; };
 		968CDF261630D71400B1F79B /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 968CDF101630D71300B1F79B /* GLES-Render.mm */; };
@@ -205,10 +209,10 @@
 		967AE34C162F5DDD00D4A25C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		967AE34E162F5DDD00D4A25C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		967AE350162F5DDD00D4A25C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		967AE354162F5DDD00D4A25C /* AITank-Info.plist */ = {isa = PBXFileReference; path = "AITank-Info.plist"; sourceTree = "<group>"; };
+		967AE354162F5DDD00D4A25C /* AITank-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AITank-Info.plist"; sourceTree = "<group>"; };
 		967AE356162F5DDD00D4A25C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		967AE358162F5DDD00D4A25C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		967AE35A162F5DDD00D4A25C /* AITank-Prefix.pch */ = {isa = PBXFileReference; path = "AITank-Prefix.pch"; sourceTree = "<group>"; };
+		967AE35A162F5DDD00D4A25C /* AITank-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AITank-Prefix.pch"; sourceTree = "<group>"; };
 		967AE35B162F5DDD00D4A25C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		967AE35C162F5DDD00D4A25C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		967AE35F162F5DDD00D4A25C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -545,6 +549,11 @@
 		967AE562162F601400D4A25C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		967AE564162F601E00D4A25C /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		967AE566162F602A00D4A25C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		967D632A164AE46A00BDBDDF /* Body.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Body.png; sourceTree = "<group>"; };
+		967D632B164AE46A00BDBDDF /* cannon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cannon.gif; sourceTree = "<group>"; };
+		967D632C164AE46A00BDBDDF /* radar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = radar.gif; sourceTree = "<group>"; };
+		967D6331164B2AE400BDBDDF /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		967D6332164B2AE400BDBDDF /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		9687A4E216370ACD0079CF94 /* MainLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainLayer.h; sourceTree = "<group>"; };
 		9687A4E316370ACD0079CF94 /* MainLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainLayer.mm; sourceTree = "<group>"; };
 		968CDEFF1630C9A300B1F79B /* CCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCViewController.h; sourceTree = "<group>"; };
@@ -1168,6 +1177,9 @@
 		968CDF171630D71300B1F79B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				967D632A164AE46A00BDBDDF /* Body.png */,
+				967D632B164AE46A00BDBDDF /* cannon.gif */,
+				967D632C164AE46A00BDBDDF /* radar.gif */,
 				96BAF0E11640596B00C5FF64 /* tank1.gif */,
 				96945C6616373F7300CAD15B /* Ball.jpeg */,
 				968CDF181630D71400B1F79B /* blocks.png */,
@@ -1197,6 +1209,8 @@
 				96BAF0E916409A2D00C5FF64 /* DisplayItem.m */,
 				96BAF0EB1641D7A200C5FF64 /* Location.h */,
 				96BAF0EC1641D7A200C5FF64 /* Location.m */,
+				967D6331164B2AE400BDBDDF /* Constants.h */,
+				967D6332164B2AE400BDBDDF /* Constants.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1276,6 +1290,9 @@
 				968CDF371630D71400B1F79B /* iTunesArtwork in Resources */,
 				96945C6716373F7300CAD15B /* Ball.jpeg in Resources */,
 				96BAF0E21640596B00C5FF64 /* tank1.gif in Resources */,
+				967D632D164AE46A00BDBDDF /* Body.png in Resources */,
+				967D632E164AE46A00BDBDDF /* cannon.gif in Resources */,
+				967D632F164AE46A00BDBDDF /* radar.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1443,6 +1460,7 @@
 				96BAF0E61640917500C5FF64 /* AITankInfo.m in Sources */,
 				96BAF0EA16409A2D00C5FF64 /* DisplayItem.m in Sources */,
 				96BAF0ED1641D7A200C5FF64 /* Location.m in Sources */,
+				967D6333164B2AE400BDBDDF /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
