@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface Location : NSObject{
-    
+    CGPoint _position;
 }
+
+@property (nonatomic) CGPoint position;
 
 @end

@@ -14,8 +14,13 @@
     DisplayItem * _body;
     DisplayItem * _cannon;
     DisplayItem * _radar;
+    
+    CGPoint _position;
 }
 
-- (id) initWithName:(NSString*)theName;
+@property (nonatomic) CGPoint position;
+
+- (id) initWithName:(NSString*)theName AndPosition:(CGPoint)thePosition;
+- (void) drawTank;
 
 @end

@@ -169,6 +169,7 @@ enum {
 	//		flags += b2Draw::e_centerOfMassBit;
 	m_debugDraw->SetFlags(flags);		
 	
+    
 	
 	// Define the ground body.
 	b2BodyDef groundBodyDef;

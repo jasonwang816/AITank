@@ -12,3 +12,4 @@ extern NSString * const IMAGE_PATH_CANNON;
 extern NSString * const IMAGE_PATH_RADAR;
 
 extern int const IMAGE_BODY_WIDTH;
+extern int const CONST_PTM_RATIO;

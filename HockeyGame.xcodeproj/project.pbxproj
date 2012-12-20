@@ -210,6 +210,9 @@
 		96BAF0E61640917500C5FF64 /* AITankInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BAF0E51640917500C5FF64 /* AITankInfo.m */; };
 		96BAF0EA16409A2D00C5FF64 /* DisplayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BAF0E916409A2D00C5FF64 /* DisplayItem.m */; };
 		96BAF0ED1641D7A200C5FF64 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BAF0EC1641D7A200C5FF64 /* Location.m */; };
+		96BE60D1168116D40006FD4E /* GameLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96BE60D0168116D40006FD4E /* GameLayer.mm */; };
+		96BE60D41681283E0006FD4E /* GameItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BE60D31681283E0006FD4E /* GameItem.m */; };
+		96BE60D7168135BB0006FD4E /* GameSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BE60D6168135BB0006FD4E /* GameSprite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -612,6 +615,12 @@
 		96BAF0E916409A2D00C5FF64 /* DisplayItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayItem.m; sourceTree = "<group>"; };
 		96BAF0EB1641D7A200C5FF64 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		96BAF0EC1641D7A200C5FF64 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		96BE60CF168116D40006FD4E /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
+		96BE60D0168116D40006FD4E /* GameLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameLayer.mm; sourceTree = "<group>"; };
+		96BE60D21681283E0006FD4E /* GameItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameItem.h; sourceTree = "<group>"; };
+		96BE60D31681283E0006FD4E /* GameItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameItem.m; sourceTree = "<group>"; };
+		96BE60D5168135BB0006FD4E /* GameSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSprite.h; sourceTree = "<group>"; };
+		96BE60D6168135BB0006FD4E /* GameSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSprite.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -670,6 +679,7 @@
 		967AE352162F5DDD00D4A25C /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				96BE60CD168116A30006FD4E /* Display */,
 				967DBE4416542CB20007FBFF /* Logic */,
 				96BAF0E71640919100C5FF64 /* Models */,
 				968CDF0F1630D71300B1F79B /* GLES-Render.h */,
@@ -1260,8 +1270,21 @@
 				9658CA3A165714FE00289B76 /* PlayerInfo.m */,
 				968E4FC6165AB71D00DE34CD /* GameData.h */,
 				968E4FC7165AB71D00DE34CD /* GameData.m */,
+				96BE60D21681283E0006FD4E /* GameItem.h */,
+				96BE60D31681283E0006FD4E /* GameItem.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		96BE60CD168116A30006FD4E /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				96BE60CF168116D40006FD4E /* GameLayer.h */,
+				96BE60D0168116D40006FD4E /* GameLayer.mm */,
+				96BE60D5168135BB0006FD4E /* GameSprite.h */,
+				96BE60D6168135BB0006FD4E /* GameSprite.m */,
+			);
+			name = Display;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1518,6 +1541,9 @@
 				968E4FC2165AB6CA00DE34CD /* PhysicsEngineLogic.mm in Sources */,
 				968E4FC5165AB6F300DE34CD /* DisplayManager.m in Sources */,
 				968E4FC8165AB71D00DE34CD /* GameData.m in Sources */,
+				96BE60D1168116D40006FD4E /* GameLayer.mm in Sources */,
+				96BE60D41681283E0006FD4E /* GameItem.m in Sources */,
+				96BE60D7168135BB0006FD4E /* GameSprite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -37,10 +37,15 @@
         _imagePath = image;
         _position = pos;
         _angle = ang;
-        _sprite = [CCSprite spriteWithFile:image rect:CGRectMake(0, 0, 60, 60)];
+        _sprite = [CCSprite spriteWithFile:image rect:rect];
         
     }
     return self;
+}
+
+-(void) dealloc
+{
+	
 }
 
 @end

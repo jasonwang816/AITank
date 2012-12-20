@@ -11,3 +11,4 @@ NSString * const IMAGE_PATH_CANNON = @"cannon.gif";
 NSString * const IMAGE_PATH_RADAR = @"radar.gif";
 
 int const IMAGE_BODY_WIDTH = 60;
+int const CONST_PTM_RATIO = 32;

@@ -12,17 +12,24 @@
 
 @implementation AITankInfo
 
-- (id) initWithName:(NSString*)theName
+@synthesize position = _position;
+
+- (id) initWithName:(NSString*)theName AndPosition:(CGPoint)thePosition
 {
     self = [super init];
     if (self)
     {
         float initAngle = 0;
         _name = theName;
-        _body = [[DisplayItem alloc] initWithImage:IMAGE_PATH_BODY AndPosition:ccp(100,100)  AndAngle:initAngle AndSize:CGRectMake(0,0,IMAGE_BODY_WIDTH, IMAGE_BODY_WIDTH)];
-        _cannon = [[DisplayItem alloc] initWithImage:IMAGE_PATH_CANNON AndPosition:ccp(0,0)  AndAngle:initAngle];
+        _body = [[DisplayItem alloc] initWithImage:IMAGE_PATH_BODY AndPosition:thePosition  AndAngle:initAngle AndSize:CGRectMake(0,0,IMAGE_BODY_WIDTH, IMAGE_BODY_WIDTH)];
+        _cannon = [[DisplayItem alloc] initWithImage:IMAGE_PATH_CANNON AndPosition:thePosition  AndAngle:initAngle];
+        _radar = [[DisplayItem alloc] initWithImage:IMAGE_PATH_RADAR AndPosition:thePosition  AndAngle:initAngle];
     }
     return self;
+}
+
+- (void) drawTank{
+    
 }
 
 @end

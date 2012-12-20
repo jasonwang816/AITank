@@ -10,4 +10,6 @@
 
 @implementation Location
 
+@synthesize position = _position;
+
 @end

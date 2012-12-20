@@ -18,7 +18,7 @@
 
 }
     
-@property (nonatomic, retain) NSString * imagePath;
+@property (nonatomic, strong) NSString * imagePath;
 @property (nonatomic) CGPoint position;
 @property (nonatomic) float angle;
 @property (retain) CCSprite * sprite;

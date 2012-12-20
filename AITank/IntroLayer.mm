@@ -9,7 +9,7 @@
 
 // Import the interfaces
 #import "IntroLayer.h"
-#import "MainLayer.h"
+#import "GameLayer.h"
 #import "HelloWorldLayer.h"
 
 
@@ -61,7 +61,7 @@
 
 -(void) makeTransition:(ccTime)dt
 {
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.1 scene:[MainLayer scene] withColor:ccWHITE]];
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.1 scene:[GameLayer scene] withColor:ccWHITE]];
 	//[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[HelloWorldLayer scene] withColor:ccWHITE]];
 }
 @end

@@ -37,7 +37,7 @@
         CGSize winSize = [CCDirector sharedDirector].winSize;
         
         // Create sprite and add it to the layer
-        _ball = [CCSprite spriteWithFile:@"body.png" rect:CGRectMake(0, 0, 60, 60)];
+        _ball = [CCSprite spriteWithFile:@"body.png" rect:CGRectMake(0, 0, 30, 60)];
         _ball.position = ccp(100, 100);
         [self addChild:_ball];
         
