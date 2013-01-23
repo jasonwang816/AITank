@@ -11,9 +11,12 @@
 #import "GameItem.h"
 
 @interface GameSprite : CCSprite{
-   GameItem * item; 
+    GameItem * item; 
+
 }
 
 -(void) setGameItem:(GameItem*) theItem;
 
+
 @end
+

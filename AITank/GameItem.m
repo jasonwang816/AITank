@@ -13,6 +13,12 @@
 @synthesize position;
 @synthesize angle;
 
+@synthesize ItemType = _itemType;
+@synthesize previousAngle = _previousAngle;
+@synthesize smoothedAngle = _smoothedAngle;
+@synthesize previousPosition = _previousPosition;
+@synthesize smoothedPosition = _smoothedPosition;
+
 - (id) initWithPosition:(CGPoint)pos AndAngle:(float)ang
 {
     self = [super init];
@@ -21,6 +27,10 @@
         position = pos;
         angle = ang;
         
+        _previousAngle = ang;
+        _smoothedAngle = ang;
+        _previousPosition = CGPointMake(pos.x/CONST_PTM_RATIO, pos.y/CONST_PTM_RATIO);
+        _smoothedPosition = _previousPosition; 
     }
     return self;
 }

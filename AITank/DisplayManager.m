@@ -53,10 +53,22 @@
     NSLog(@"winsize[ width:%f, height:%f]",s.width, s.height);
     
     //Init gameitems
-    ball = [GameSprite spriteWithFile:@"ball.jpeg" rect:CGRectMake(0, 0, 23, 23)];
+    ball = [GameSprite spriteWithFile:@"ball.gif" rect:CGRectMake(0, 0, 10, 10)];
     [ball setGameItem:_gameData.ball];
     [theLayer addChild:ball];
     
+    for(id key in _gameData.players)
+    {
+        PlayerInfo * pInfo = [_gameData.players objectForKey:key];
+        
+        GameSprite * playerSprite = [GameSprite spriteWithFile:@"Player1a.gif" rect:CGRectMake(0, 0, 70, 30)];
+        [playerSprite setGameItem:pInfo];
+        [theLayer addChild:playerSprite];
+        
+//        GameSprite * stickSprite = [GameSprite spriteWithFile:@"Stick.png" rect:CGRectMake(0, 0, 60, 3)];
+//        [stickSprite setGameItem:pInfo];
+//        [theLayer addChild:stickSprite];
+    }
 }
 
 
@@ -76,7 +88,7 @@
                                     sharegroup:nil
                                  multiSampling:NO
                                numberOfSamples:0];
-    
+    NSLog(@"%@", [[[UIApplication sharedApplication] keyWindow] bounds]);
     // Enable multiple touches
 	[glView setMultipleTouchEnabled:YES];
     
@@ -130,5 +142,9 @@
     
 }
 
+-(void) Close{
+    [director.view removeFromSuperview];
+    [director removeFromParentViewController];
+}
 
 @end

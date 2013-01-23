@@ -48,16 +48,19 @@
 
 - (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
-    //    UITouch *myTouch = [touches anyObject];
-    //    CGPoint location = [myTouch locationInView:[myTouch view]];
-    //    location = [[CCDirector sharedDirector] convertToGL:location];
-    //    b2Vec2 locationWorld = b2Vec2(location.x/PTM_RATIO, location.y/PTM_RATIO);
-    
     CCDirector *director = displayMgr.director;
+    UITouch *myTouch = [touches anyObject];
+    CGPoint location = [myTouch locationInView:[myTouch view]];
+    location = [director convertToGL:location];
+
+
+    
+    [gameManager ShootBallAt:location];
+    
     //[director end];
     
-    [director.view removeFromSuperview];
-    [director removeFromParentViewController];
+//    [director.view removeFromSuperview];
+//    [director removeFromParentViewController];
     //    NSLog(@"%@", director);
     //    [director dismissViewControllerAnimated:YES completion:nil];
     //    UIViewController * vc = [director parentViewController];

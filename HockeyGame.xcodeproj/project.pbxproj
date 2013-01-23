@@ -183,6 +183,11 @@
 		967D6333164B2AE400BDBDDF /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 967D6332164B2AE400BDBDDF /* Constants.m */; };
 		967DBE4816542CD20007FBFF /* GameManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 967DBE4716542CD20007FBFF /* GameManager.mm */; };
 		9687A4E416370ACD0079CF94 /* MainLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9687A4E316370ACD0079CF94 /* MainLayer.mm */; };
+		9688C1691683E3DE003CFA86 /* ball.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9688C1661683E3DE003CFA86 /* ball.gif */; };
+		9688C16A1683E3DE003CFA86 /* Player.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9688C1671683E3DE003CFA86 /* Player.gif */; };
+		9688C16B1683E3DE003CFA86 /* Stick.png in Resources */ = {isa = PBXBuildFile; fileRef = 9688C1681683E3DE003CFA86 /* Stick.png */; };
+		9688E5B1168E4E4400C9721F /* Player1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9688E5B0168E4E4400C9721F /* Player1.gif */; };
+		9688E5B4168E74D400C9721F /* Player1a.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9688E5B3168E74D400C9721F /* Player1a.gif */; };
 		968CDF011630C9A300B1F79B /* CCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968CDF001630C9A300B1F79B /* CCViewController.m */; };
 		968CDF261630D71400B1F79B /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 968CDF101630D71300B1F79B /* GLES-Render.mm */; };
 		968CDF271630D71400B1F79B /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 968CDF121630D71300B1F79B /* HelloWorldLayer.mm */; };
@@ -575,6 +580,11 @@
 		967DBE4716542CD20007FBFF /* GameManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameManager.mm; sourceTree = "<group>"; };
 		9687A4E216370ACD0079CF94 /* MainLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainLayer.h; sourceTree = "<group>"; };
 		9687A4E316370ACD0079CF94 /* MainLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainLayer.mm; sourceTree = "<group>"; };
+		9688C1661683E3DE003CFA86 /* ball.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ball.gif; sourceTree = "<group>"; };
+		9688C1671683E3DE003CFA86 /* Player.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Player.gif; sourceTree = "<group>"; };
+		9688C1681683E3DE003CFA86 /* Stick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stick.png; sourceTree = "<group>"; };
+		9688E5B0168E4E4400C9721F /* Player1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Player1.gif; sourceTree = "<group>"; };
+		9688E5B3168E74D400C9721F /* Player1a.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Player1a.gif; sourceTree = "<group>"; };
 		968CDEFF1630C9A300B1F79B /* CCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCViewController.h; sourceTree = "<group>"; };
 		968CDF001630C9A300B1F79B /* CCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCViewController.m; sourceTree = "<group>"; };
 		968CDF0F1630D71300B1F79B /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
@@ -1228,6 +1238,11 @@
 		968CDF171630D71300B1F79B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9688E5B3168E74D400C9721F /* Player1a.gif */,
+				9688E5B0168E4E4400C9721F /* Player1.gif */,
+				9688C1661683E3DE003CFA86 /* ball.gif */,
+				9688C1671683E3DE003CFA86 /* Player.gif */,
+				9688C1681683E3DE003CFA86 /* Stick.png */,
 				967D632A164AE46A00BDBDDF /* Body.png */,
 				967D632B164AE46A00BDBDDF /* cannon.gif */,
 				967D632C164AE46A00BDBDDF /* radar.gif */,
@@ -1365,6 +1380,11 @@
 				967D632D164AE46A00BDBDDF /* Body.png in Resources */,
 				967D632E164AE46A00BDBDDF /* cannon.gif in Resources */,
 				967D632F164AE46A00BDBDDF /* radar.gif in Resources */,
+				9688C1691683E3DE003CFA86 /* ball.gif in Resources */,
+				9688C16A1683E3DE003CFA86 /* Player.gif in Resources */,
+				9688C16B1683E3DE003CFA86 /* Stick.png in Resources */,
+				9688E5B1168E4E4400C9721F /* Player1.gif in Resources */,
+				9688E5B4168E74D400C9721F /* Player1a.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

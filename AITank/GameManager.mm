@@ -43,7 +43,14 @@
 }
 
 -(void) GameUpdate : (ccTime) dt{
-    [_phyEngineLogic PhysicsStep:dt];
+    [_phyEngineLogic update:dt];
+    //[_phyEngineLogic PhysicsStep:dt];
+}
+
+-(void) ShootBallAt:(CGPoint) dest {
+    
+
+    [_phyEngineLogic LinearForceOnTheBall:dest];
 }
 
 @end

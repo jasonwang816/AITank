@@ -27,5 +27,7 @@
 
 -(void) GameUpdate : (ccTime) dt;
 
+-(void) ShootBallAt:(CGPoint) dest;
+
 @end
 

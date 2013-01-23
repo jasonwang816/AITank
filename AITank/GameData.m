@@ -8,6 +8,7 @@
 
 #import "GameData.h"
 
+
 @implementation GameData
 
 @synthesize gameField = _gameField;
@@ -28,16 +29,18 @@
 
 - (id) init{
     if (self = [super init]){
-        CGFloat width = 320;
-        CGFloat height = 460;
+        CGFloat width = 320.0f;
+        CGFloat height = 460.0f;
         
         _gameField = [[GameField alloc] initWithRect:CGRectMake(0, 0, width, height)];
         _gameViewPort = [[GameViewPort alloc]  initWithRect:CGRectMake(0, 0, width, height)];
         _players = [[NSMutableDictionary alloc] init];
         
-        ball = [[GameItem alloc] initWithPosition:CGPointMake(100, 100) AndAngle:0];
-        PlayerInfo *aPlayer = [[PlayerInfo alloc] initWithID:1 AndName:@"1" AndPosition:CGPointMake(100, 100)];
+        ball = [[GameItem alloc] initWithPosition:CGPointMake(1, 1) AndAngle:0];
+        ball.ItemType = GameItemType_Ball;
         
+        PlayerInfo *aPlayer = [[PlayerInfo alloc] initWithID:1 AndName:@"1" AndPosition:CGPointMake(200, 100)];
+        aPlayer.ItemType = GameItemType_Player;
         [_players setObject:aPlayer forKey:aPlayer.name];
     }
     return  self;

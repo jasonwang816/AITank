@@ -8,7 +8,26 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GameItem : NSObject
+typedef enum  {
+	GameItemType_Player,
+    GameItemType_GoalKeeper,
+	GameItemType_Stick,
+    GameItemType_Ball
+} GameItemType;
+
+@interface GameItem : NSObject{
+    GameItemType _itemType;
+    float _previousAngle;
+	float _smoothedAngle;
+	CGPoint _previousPosition;
+	CGPoint _smoothedPosition;    
+}
+
+@property (nonatomic) GameItemType ItemType;
+@property (nonatomic) float previousAngle;
+@property (nonatomic) float smoothedAngle;
+@property (nonatomic) CGPoint previousPosition;
+@property (nonatomic) CGPoint smoothedPosition;
 
 @property (nonatomic) CGPoint position;
 @property (nonatomic) float angle;

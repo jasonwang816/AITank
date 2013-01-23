@@ -12,6 +12,8 @@
 #import "GameViewPort.h"
 #import "PlayerInfo.h"
 
+
+
 @interface GameData : NSObject{
     GameField * _gameField;
     GameViewPort * _gameViewPort;

@@ -66,7 +66,7 @@
         // Create ball body and shape
         b2BodyDef ballBodyDef;
         ballBodyDef.type = b2_dynamicBody;
-        ballBodyDef.position.Set(100/PTM_RATIO, 100/PTM_RATIO);
+        ballBodyDef.position.Set(100.0f/PTM_RATIO, 100.0f/PTM_RATIO);
         ballBodyDef.userData = (__bridge void *)_ball;
         _body = _world->CreateBody(&ballBodyDef);
         

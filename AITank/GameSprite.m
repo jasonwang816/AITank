@@ -10,6 +10,8 @@
 
 @implementation GameSprite
 
+
+
 -(void) setGameItem:(GameItem*) theItem{
     item = theItem;
     self.position = theItem.position;
@@ -27,10 +29,10 @@
 // returns the transform matrix according the Chipmunk Body values
 -(CGAffineTransform) nodeToParentTransform
 {	
-	CGPoint pos  = item.position;
+	CGPoint pos  = item.smoothedPosition;
 	
-	float x = pos.x;// * PTM_RATIO;
-	float y = pos.y;// * PTM_RATIO;
+	float x = pos.x * CONST_PTM_RATIO;
+	float y = pos.y * CONST_PTM_RATIO;
 	
 	if ( ignoreAnchorPointForPosition_ ) {
 		x += anchorPointInPoints_.x;
@@ -38,7 +40,7 @@
 	}
 	
 	// Make matrix
-	float radians = item.angle;
+	float radians = item.smoothedAngle;
 	float c = cosf(radians);
 	float s = sinf(radians);
 	
